@@ -229,7 +229,7 @@ a:hover, a:focus {
 	transform: translateX(-50%) translateY(-50%);
 }
 .nav-toggle span:before, .nav-toggle span:after {
-	background-color: var(--mainWhite);
+	background-color: var(--mainYellow);
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -276,7 +276,7 @@ a:hover, a:focus {
 	background-color: rgba(255, 255, 255, 0);
 }
 .nav-toggle.close-nav span:before, .nav-toggle.close-nav span:after {
-	background-color: var(--mainWhite);
+	background-color: var(--mainYellow);
 }
 .nav-toggle.close-nav span:before {
 	-moz-transform: translateY(0) rotate(45deg);
@@ -325,6 +325,9 @@ a:hover, a:focus {
 }
 .landingParagraph span {
 	color: var(--mainWhite)
+}
+.landingMobile {
+	display: none;
 }
 
 

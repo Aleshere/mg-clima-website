@@ -73,12 +73,23 @@
 
 @media screen and (max-width: 768px) { 
 	.landing {
-	background: url('../images/logotransparent.png') no-repeat, var(--landingBackgroundGrey);
-	background-position: 10% 10%;
+	background-size: 100vw 80vh;
+	}
+	.landingH3, .landingH4, .landingParagraph {
+	display: none;
 	}
 	.landingText {
-	top: 55%;
-	left: 15%;
+	width: 50%;
+	top: 30%;
+	left: 50%;
+	}
+	.landingMobile {
+	display: block;
+	color: var(--mainYellow)
+	}
+	.landingMobile img {
+	width: 30%;
+	object-fit: cover;
 	}
 	.footer .footer-col {
 	margin-bottom: 50px;
@@ -86,7 +97,15 @@
 }
 
 @media screen and (max-width: 490px) {
-	.landingText h3, .landingText h4, .landingText p {
-	font-size: 2rem;
-	} 
+	.landing {
+	background-position: center;
+	background-size: 100vw 40vh;
+	}
+	.landingMobile {
+	font-size: 3rem;
+	}
+	.landingText {
+	top: center;
+	left: center;
+	}
 }
