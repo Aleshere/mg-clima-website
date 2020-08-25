@@ -74,10 +74,41 @@
 }
 
 @media screen and (max-width: 540px) {
+	#banner:before {
+		background: #000;
+	}
 	#banner h1 span {
 		font-size: 50%;
+		color: var(--mainYellow)
 	}
 	#banner h2, #banner h3 {
 		font-size: var(--fontSizeH5);
+	}
+	#banner h3 {
+		top: 60%;
+	}
+	h1 span:nth-child(1) {
+		animation-delay: .75s !important;
+	}
+	h1 span:nth-child(2) {
+	animation-delay: 1s !important;
+	}
+	h1 span:nth-child(3) {
+	animation-delay: 1.25s !important;
+	}
+	h1 span:nth-child(4) {
+	animation-delay: 1.5s !important;
+	}
+	h1 span:nth-child(5) {
+	animation-delay: 1.75s !important;
+	}
+	h1 span:nth-child(6) {
+	animation-delay: 2s !important;
+	}
+	h1 span:nth-child(7) {
+	animation-delay: 2.25s !important;
+	}
+	h1 span:nth-child(8) {
+	animation-delay: 2.5s !important;
 	}
 }
