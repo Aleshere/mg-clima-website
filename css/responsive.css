@@ -65,47 +65,19 @@
 	padding: 1.7rem 0;
 	color: var(--mainWhite);
 	}
-	.landingText {
-	top: 40%;
-	left: 50%;
-	}
 }
 
 @media screen and (max-width: 768px) { 
-	.landing {
-	background-size: 100vw 80vh;
-	}
-	.landingH3, .landingH4, .landingParagraph {
-	display: none;
-	}
-	.landingText {
-	width: 50%;
-	top: 30%;
-	left: 50%;
-	}
-	.landingMobile {
-	display: block;
-	color: var(--mainYellow)
-	}
-	.landingMobile img {
-	width: 30%;
-	object-fit: cover;
-	}
 	.footer .footer-col {
 	margin-bottom: 50px;
 	}
 }
 
-@media screen and (max-width: 490px) {
-	.landing {
-	background-position: center;
-	background-size: 100vw 40vh;
+@media screen and (max-width: 540px) {
+	#banner h1 span {
+		font-size: 50%;
 	}
-	.landingMobile {
-	font-size: 3rem;
-	}
-	.landingText {
-	top: 35%;
-	left: center;
+	#banner h2, #banner h3 {
+		font-size: var(--fontSizeH5);
 	}
 }
