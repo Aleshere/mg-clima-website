@@ -12,7 +12,7 @@
 	text-decoration: none !important;
 }
 :root {
-	--mainBackground: #262626;
+	--mainBackground: #000 !important;
 	--mainYellow: #fec801;
 	--mainWhite: #fff;
 	--mainBlue: #0d94d6;
