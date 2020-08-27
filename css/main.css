@@ -72,6 +72,9 @@ a:hover, a:focus {
 	-webkit-transition: background-color, color, 0.3s;
 	transition: background-color, color, 0.3s;
 }
+ol, ul {
+	margin-bottom: 0 !important;
+}
 .section {
 	padding: 10rem 0;
 }
@@ -104,9 +107,13 @@ a:hover, a:focus {
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
 }
-#header .logo {
-	display: inline;
-}
+.fa-facebook:hover {
+	color: #1877f2;
+	-moz-transition: background-color, color, 0.3s;
+	-o-transition: background-color, color, 0.3s;
+	-webkit-transition: background-color, color, 0.3s;
+	transition: background-color, color, 0.3s;
+} 
 #header .logo img {
 	border-radius: 50%;
 }
@@ -149,6 +156,9 @@ a:hover, a:focus {
 	font-weight: 700;
 	margin-left: 4rem;
 	text-transform: uppercase;
+}
+.logo, .facebook {
+	margin-left: 0 !important;
 }
 .navigation a:hover, .navigation a.active {
 	color: var(--mainYellow);
@@ -301,36 +311,47 @@ a:hover, a:focus {
 	width:100vw;
 	height: 100vh;
 	overflow:hidden;
+	position: relative;
 }
 #banner:before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width:100vw;
 	height: 100vh;
 	background: linear-gradient(to right, #fec801, #fec801, #fff, #fff, #0d94d6, #0d94d6);
 	mix-blend-mode: color;
 	pointer-events: none;
-  }	
+}	
+#banner .video-container {
+	height: 100vh;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 #banner video {
 	object-fit: cover;
+	width: 100%;
 }
 #banner h1, #banner h2, #banner h3  {
 	position: absolute;
 	transform: translateY(-50%);
 	width: 100%;
 	text-align: center;
-	color: var(--mainWhite);
 }
 #banner h1 {
 	top: 35%;
+	color: var(--mainYellow);
 }
 #banner h2 {
 	top: 50%;
+	color: var(--mainWhite);
 }
 #banner h3 {
 	top: 65%;
+	color: var(--mainWhite);
 }
 #banner h1 span {
 	opacity: 0;
@@ -689,6 +710,10 @@ address {
 }
 .footer a {
 	color: rgba(255, 255, 255, 0.50);
+	font-size: var(--fontSizeParagraph);
+}
+.contact-tel, .contact-email {
+	margin: 1rem 0;
 }
 .footer a:hover {
 	color: var(--mainYellow);
